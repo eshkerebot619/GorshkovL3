@@ -15,22 +15,29 @@ private:
 	int length;
 	int diameter;
 	bool inRepair;
-	int id;
 public:
 
+	Pipe();
+	
 	Pipe(string n, int l, int d, bool r);
 
-	string getName();
+	int getDiameter() const { return diameter; }
 
-	int getLength();
+	bool isInRepair() const { return inRepair; }
 
-	int getDiameter();
-
-	bool getInRepair();
-
-	void addPipe(map<int, Pipe> pipes);
+	void addPipe(int& id, map<int, Pipe>& pipes);
 
 	void displayPipes(map<int, Pipe> pipes) const;
+
+	void deletePipe(map<int, Pipe>& pipes);
+
+	void editPipe(int& id, map<int, Pipe>& pipes);
+
+	void filterPipe(map<int, Pipe>& pipes);
+
+	void saveToFile(ofstream& outFile, map<int, Pipe>& pipes);
+
+	void loadFromFile(string& filename, map<int, Pipe>& pipes, int& id);
 
 	friend std::ostream& operator<<(ostream& os, const Pipe& p);
 };

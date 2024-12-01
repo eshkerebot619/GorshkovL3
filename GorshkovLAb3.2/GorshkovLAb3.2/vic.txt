@@ -1,0 +1,3 @@
+Pipe ID: 1, Pipe Name: 1, Length: 1, Diameter: 1, In Repair: Yes
+Pipe ID: 2, Pipe Name: 1, Length: 1, Diameter: 1, In Repair: Yes
+CS name: 2, CS ID: 1, the number of stations: 2, the number of working stations: 2, Effectivity: 12

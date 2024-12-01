@@ -127,10 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CS.cpp" />
+    <ClCompile Include="GasTransportNetwork.cpp" />
     <ClCompile Include="GorshkovLAb3.2.cpp" />
     <ClCompile Include="Pipe.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CS.h" />
+    <ClInclude Include="GasTransportNetwork.h" />
     <ClInclude Include="GorshkovLab3.2.h" />
     <ClInclude Include="Pipe.h" />
   </ItemGroup>
